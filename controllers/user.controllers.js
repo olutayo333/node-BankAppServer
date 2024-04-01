@@ -10,8 +10,7 @@ const signup = (req,res)=>{
             password:req.body.password,
             accountnumber: req.body.accountnumber,
             phonenumber:req.body.phonenumber,
-            balance:req.body.balance,
-           
+            balance:req.body.balance,     
      }  
 
      let form = new userModel(userData)
@@ -147,9 +146,9 @@ const signup = (req,res)=>{
     
 
         
-const test = (req,res) =>{
-    console.log("testing oooo");
-    res.send({message:"testing ooo"})
-}
+// const test = (req,res) =>{
+//     console.log("testing oooo");
+//     res.send({message:"testing ooo"})
+// }
 
-    module.exports = {signup, signin, dashboard, deposit, withdraw, resetpassword, test, accountresetpassword}
+    module.exports = {signup, signin, dashboard, deposit, withdraw, resetpassword, accountresetpassword}
