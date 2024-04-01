@@ -29,7 +29,7 @@ const signup = (req,res)=>{
         console.log(req.body)          
     }  
 
-    let signinEmail; let signinPassword; let signinName; let signinPhonenumber; let signinAccountnumber; let signinBalance ;
+    let signinEmail; let signinPassword; 
     const signin = (req, res) =>{
         let {email,password} = req.body; signinEmail = req.body.email; signinPassword=req.body.password
         userModel.findOne({email:email} && {password:password})
